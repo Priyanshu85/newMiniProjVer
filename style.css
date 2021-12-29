@@ -26,7 +26,12 @@ nav {
   align-items: center;
   /* background-color: yellow; */
 }
-
+#webtools{
+  margin-left:-200px;
+}
+#tools{
+  margin-left:-60px;
+}
 .left {
   display: flex;
   justify-content: center;
@@ -40,9 +45,9 @@ nav {
 }
 .left a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   color: black;
-  color: rgb(105, 101, 101);
+  /* color: rgb(105, 101, 101); */
   font-size: 1.2rem;
   font-weight: bold;
   padding: 1.3rem;
@@ -50,7 +55,7 @@ nav {
 }
 .left a:hover{
   color: black;
-  font-weight: bold;
+  font-weight: center;
   text-decoration: underline;
 
 }
@@ -58,7 +63,7 @@ nav {
   border: none;
   padding: 0.5em 01em;
   border-radius: 5px;
-  background-color: rgb(156, 230, 233);
+  background-color: rgb(243, 243, 243);
   transition: all ease-in 170ms;
   position: relative;
   left: 5rem;
@@ -110,7 +115,8 @@ nav {
 }
 #logo {
   /* display: flex; */
-  margin-right: 100px;
+  /* margin-right: 0px; */
+  padding: 0;
 }
 .right-sec h1 {
   font-size: 3.2rem;

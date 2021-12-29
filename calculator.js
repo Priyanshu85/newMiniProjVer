@@ -1,15 +1,20 @@
-// This function clear all the values
-function clearScreen() {
-  document.getElementById("result").value = "";
+let outputScreen=document.getElementById("output-screen");
+
+function display(num) {
+    outputScreen.value += num;
 }
 
-// This function display values
-function display(value) {
-  document.getElementById("result").value += value;
-}
-// This function evaluates the expression and return result
 function calculate() {
-  var p = document.getElementById("result").value;
-  var q = eval(p);
-  document.getElementById("result").value = q;
+   try{ outputScreen.value = eval(outputScreen.value);}
+   catch (err) {
+       alert("Invalid equation!")
+   }
+}
+
+function allClear() {
+    outputScreen.value = "";
+}
+
+function del() {
+    outputScreen.value = outputScreen.value.slice(0, -1);
 }
